@@ -246,3 +246,17 @@ sum = 0;
 log(sum);
 
 // index [0,1,2,3]
+
+// #1 : FN : myForEach
+function myForEach(fn) {
+    // code...
+
+    // #2 : fn
+    for (let i = 0; i < 3; i++) {
+        fn(`index = ${i}`);
+    }
+    // code...
+}
+
+// Caller
+myForEach((a) => console.log(a));
